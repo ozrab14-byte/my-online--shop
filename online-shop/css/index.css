@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../gallary/all-computer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* بخش نفبار */
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+@media(max-width:768px){.navbar{max-width: 100%}}
+#search2 {border-radius: 1.2rem;}
+button{border-radius: 2rem; width: 60px;}
+ about
+button {
+  border-radius: 2rem;
+  width: auto;   
+}
+/* سرج نفبار*/
+#search{margin-right: 10px; border-radius: 1rem;}
+.logo{ background-image: url(../gallary/logo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+  width: 20em;
+  height: 6em;
+margin: auto;
+animation: logohead 5s ease-in-out infinite alternate; border-radius: 50%; width: 15%;}
+
+@keyframes logohead{
+  0%{
+    transform: rotatey(0);
+    filter:grayscale(10);
+  }
+  100%{
+    transform: rotatey(360deg);
+    filter:blur(100);
+  }
+}
+@media (max-width: 768px){.logo{width: 15rem;height:50px;}}
+@media (max-width: 768px){#head{font-size: large;}}
+/* tital */
+h1 {
+  text-align: center;
+  text-shadow: 3px 3px 4px rgb(236, 186, 110);
+  color: white;
+}
+/* کروسیل یا سلایدر */
+#cover-carousel {
+  background-color: rgb(61, 78, 115);
+}
+
+.carousel {
+  width: 100%;
+  margin: auto;
+  max-width: 1100px;
+  border: 2px solid black;
+}
+
+.carousel img {
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+/* عنوان محصولات */
+#Prodact-header {
+  text-align: center;
+  text-shadow: 2px 2px 3px rgb(22, 155, 144);
+  margin-top: 5%;
+  background-color: rgb(19, 96, 159);
+  color: white;
+
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 8px;
+}
+
+/* گزید ها */
+.container-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container-product {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+}
+
+/* باکس ها یا کارت های  */
+.container-child {
+  display: flex;
+  border: 2px solid blue;
+  height: 200px;
+  width: 100%;
+}
+
+/* دکمه های محصولات */
+.btn {
+  height: 30px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgb(0, 96, 128) 2px 2px 3px;
+}
+.btn:hover{background-color: green; color: white; box-shadow: 3px 3px 5px rgb(7, 155, 118);}
+/* accordion یا لیست ها */
+.accordion,
+.accordion-item {
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(19, 96, 159);
+  padding: 10px;
+  border-radius: 1.5rem;
+}
+.accordion:hover{background-color: rgb(34, 122, 223); box-shadow: 4px 4px 10px black;};
+@media (max-width: 768px) {
+  .accordion,
+  .accordion-item {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* بخش محصولات */
+#our-best-prodact{border-bottom: 4px solid white; width: 400px;  margin:auto;margin-top: 5%; text-align: center; font-size: 30px;}
+@media(max-width:768px){#our-best-prodact{width: 100%;align-items: center; justify-content: center;}}
+#Prodact-header{text-align: center; text-shadow: 2px 2px 3px rgb(22, 155, 144); 
+  justify-content: center; margin-top: 5%; background-color: rgb(19, 96, 159); margin-bottom: 0%; color:white; width: 60%; margin-left: 20%; border-radius: 8px;}
+.container-product{display: grid; grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr; gap:4rem; padding: 2rem; margin-top: 3%; padding-top: 0;}
+.container-child{  display:flex; border: 2px solid blue; height: 200px; gap:4rem; text-align: center; margin:0; margin-top: 0%; }
+.btn{height: 30px; width: fit-content; margin-left: 35%;  box-shadow: green 2px 2px 3px;}
+
+@media (max-width: 768px){.container-product{grid-template-columns: 1fr;margin: 0; padding: 1px; }}
+.accordion,.accordion-item ,#prodact-header{width: 60%; margin-left: 20%; align-items: center; background-color: rgb(19, 96, 159); padding: 10px;}
+@media(max-width:768px){.accordion{width:100% ; margin-left: 0%;}}
+@media(max-width:768px){.accordion-item{width:100% ; margin:0;}}
+@media(max-width:768px){#prodact-header{width:100% ; margin-left: 0%;}}
+h3{text-align: center; justify-content: center; margin-top: 30%; padding: 0;}
+
+#detail{width: 100%; height:fit-content; margin: auto; padding: 0%;  box-shadow: 3px 3px 3px rgb(61, 78, 115); white-space: nowrap; font-size:small;}
+.cover{border: 4px solid rgb(61, 78, 115);; border-radius: 2rem; overflow: hidden; margin: 0; height: fit-content;
+   box-shadow: 3px 3px 6px rgb(61, 78, 115); margin:0; padding: 0%; justify-content: center; margin-top: 10%;}
+@media(max-width:768px){.cover{overflow:hidden; width: 100%;}}
+   .accordion-button{border-radius: 1.5rem; }
+   #searchInput{border-radius: 1.5rem; margin-left:35%; width: 30%; height: 40px; margin-top: 3%;}
+   
+.a{border: 2px solid black;}
+#all-computer{background-image: url("../gallary/all-computer.jpg"); background-position: center; background-size: cover;background-repeat: no-repeat; }
+#desktop1{background-image: url("../gallary/desktop1.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+#labtap{background-image: url("../gallary/labtap.jpg"); background-position: center; background-size: contain; background-repeat: no-repeat; width: 100%;}
+#m-k-h{background-image: url("../gallary/m-k-h.png"); background-position: center; background-size: contain; background-repeat: no-repeat; }
+#flash{background-image: url("../gallary/flash.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;}
+#hardesk{background-image: url("../gallary/harddesk.jpg"); background-position: center; background-size: contain; background-repeat: no-repeat;}
+#ups{background-image: url("../gallary/ups.jpg"); background-position: center; background-size: contain; background-repeat: no-repeat;}
+#router{background-image: url("../gallary/router.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;}
+#ssd{background-image: url("../gallary/ssd.jpg"); background-position: center; background-size: contain; background-repeat: no-repeat;}
+
+
+@media(min-width:992px){#container-header{padding-bottom:0; margin-bottom:0;}}
+
+/* فورم چک لیست*/
+
+#form{background-color:rgb(104, 141, 221); border: 2px solid rgb(56, 22, 192); width: 600px; margin: auto; border-radius:2rem;}
+#form:hover{background-color: rgb(229, 221, 138);}
+.div_child_form{align-items: center;}
+
+
+@media (max-width: 768px) {
+  #form {
+    width: 100%;
+  }
+}
+
+/* about */
+#about {
+  border: 2px solid blue;
+  border-radius: 2rem;
+  box-shadow: 4px 4px 10px;
+  margin: 60px;
+  padding: 50px;
+  background-color: antiquewhite;
+  color: black;
+}
+#about:hover{background-color: rgb(44, 37, 37); color:white}
+ @media(max-width:768px){#about{width:100%; max-width: 100%;   font-size: 16px; white-space: normal;  
+  overflow:auto;overflow: visible; padding: 5px; height:auto; margin: auto;}}
+ 
+/* contact */
+.contact {
+  border: 2px solid rgb(63, 63, 217);
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px;
+  background-color: rgb(104, 141, 221);
+}
+.contact:hover{background-color: rgb(61, 61, 192); box-shadow: 4px 4px 8px;}
+@media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    width:100%; max-width: 100%;
+    margin-left: 0;
+    padding: 0;
+    
+  }
+
+}
+
+#contacts,
+#contact-me {
+  border: 2px solid rgb(77, 77, 240);
+  border-radius: 2rem;
+  box-shadow: 3px 3px 6px;
+  margin: 5%;
+  text-align: center;
+  background-color: rgb(50, 37, 37);
+  color: white;
+}
+@media (max-width: 768px) {
+  #contacts {
+  
+  width: 85%;
+    margin: 0;
+    padding: 0;
+    
+  }}
+  @media (max-width: 768px) {
+  #contact-me {
+  
+  width: 85%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }}
+  #submitcontact{width: 8rem;}
+  #submitcontact:hover{background-color: rgb(24, 73, 137); box-shadow: 3px 3px 3px white;}
+/* follow */
+#follow {
+  border: 2px solid rgb(84, 84, 216);
+  border-radius: 1rem;
+  width: 30%;
+  margin: auto;
+}
+@media(max-width:768px){#follow{width: 90%;}}
+/* footer */
+#footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: black;
+  color: white;
+  margin-top: 10%;
+}
+i{color:white;}
+.footer-child {
+  text-align: center;
+}
+
+.footer-child ul {
+  list-style: none;
+  padding: 0;
+}
+
+.circle {
+  padding-top: 20px;
+}
+
+h1,h2,h3,h4,h5,h6{.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+.lobster-two-regular-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+
+}
+
+;}}
+h1,h2,h3,h4,h6{color:white;}}
+p{.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lobster-two-regular-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lobster-two-bold-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+}

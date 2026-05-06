@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Shop</title>
+
+<!--<link rel="stylesheet" href="bootstraps/css/bootstrap.min.css">-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Baloo+2:wght@400..800&family=Bebas+Neue&family=Great+Vibes&family=Hind+Siliguri:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Baloo+2:wght@400..800&family=Bebas+Neue&family=Great+Vibes&family=Hind+Siliguri:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">My Shop</a>
+
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="#our-best-prodact" class="nav-link">Products</a></li>
+<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+<li class="nav-item"><a href="#form" class="nav-link">Checkout</a></li>
+</ul>
+
+
+</div>
+ <!-- <input  type="text" placeholder="search...." id="search">
+        <button type="button" onclick="searchproduct"></button>-->
+</div>
+ <input  type="text" placeholder="search...." id="search">
+</nav>
+
+<!-- HEADER -->
+<header class="text-center p-3">
+  <div class="logo"></div>
+<h1 id="head">Welcome To Our Computer Store</h1>
+</header>
+
+<!-- CAROUSEL -->
+<section id="home">
+<div id="slider" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="gallary/workstation1.jpg" class="d-block w-100" alt="image1">
+</div>
+
+<div class="carousel-item">
+<img src="gallary/desktop1.jpg" class="d-block w-100" alt="image2">
+</div>
+
+<div class="carousel-item">
+<img src="gallary/all-computer.jpg" class="d-block w-100" alt="image3">
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button"
+data-bs-target="#slider" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button"
+data-bs-target="#slider" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+</section>
+
+<br><br>
+
+<!-- FEATURE PRODUCTS -->
+<section class="container">
+
+<h2 class="text-center">Feature Products</h2>
+
+<div class="accordion" id="accordionExample">
+
+<div class="accordion-item">
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse" data-bs-target="#c1">Computers
+</button>
+
+<div id="c1" class="accordion-collapse collapse"
+data-bs-parent="#accordionExample">
+<div class="accordion-body">
+<ul>
+ <li class="product_item">Desktap</li>
+                    <li class="item">Labtop</li>
+                    <li class="item">All-in-one-PC</li>
+                    <li class="item">Office-Pc</li>
+                    <li class="item">Gaming-Pc</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse" data-bs-target="#c2">Monitor , Printer , UPS
+</button>
+
+
+
+<div id="c2" class="accordion-collapse collapse"
+data-bs-parent="#accordionExample">
+<div class="accordion-body">
+<ul>
+
+                    <li class="item">LED Monitor</li>
+                    <li class="item">Gaming Monitor</li>
+                    <li class="item">Curved Monitor</li>
+                    <li class="item">Laser prenter</li>
+                    <li class="item">Inkjet Printer</li>
+                    <li class="item">All-in-one Prenter</li>
+                    <li class="item">Home USP</li>
+                    <li class="item">Office UPS</li>
+                    <li class="item">Gaming USP</li>
+                </ul>
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse" data-bs-target="#c3">  Mouse & Keybard & Headphone
+</button>
+
+
+
+<div id="c3" class="accordion-collapse collapse"
+data-bs-parent="#accordionExample">
+<div class="accordion-body">
+<ul>
+                   <li class="item">MOuse</li>
+                    <li class="item">Keyboard</li>
+                    <li class="item"> wirless ,Bluetooth Headphon</li>
+                    <li class="item"> Bluetooth Speaker , computer Speaker</li>
+                    <li class="item"> HD Webcam Full HD Webcam</li>
+                    <li class="item">CPU Cooler: Air cooler,Liqquid coolrt</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse" data-bs-target="#c4">Flash
+</button>
+
+<div id="c4" class="accordion-collapse collapse"
+data-bs-parent="#accordionExample">
+<div class="accordion-body">
+<ul>
+ <li class="item">USB 3.0 Flash</li>
+ <li class="item">Type-C Flash</li>
+<li class="item">OTG Flash</li>
+<li class="item">Dual USB flash</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse" data-bs-target="#c5"> Haed-Desk & SSD
+</button>
+
+<div id="c5" class="accordion-collapse collapse"
+data-bs-parent="#accordionExample">
+<div class="accordion-body">
+<ul>
+<li class="item">External Hardn Desk</li>
+                    <li class="item">Internal Hard Desk</li>
+                    <li class="item">Portable Hard Desk</li>
+                    <li class="item">External SSD</li>
+                    <li class="item">Internal SSD</li>
+</ul>
+</div>
+</div>
+</div>
+
+</section>
+
+<br>
+
+
+
+    <section3>
+         <h3 id="our-best-prodact">Our Best Prodact</h3>
+               <div class="container-product ">
+            <div class="row">
+                 <div class="cover">
+                <div class="container-child" id="all-computer">
+                </div>
+                          
+     <div class="accordion" id="detail">
+            <div class="accordion-item">
+                <button class="accordion-button"
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#listprodact3">
+                All-in-One PC</button>
+                <div id="listprodact3" class="accordion">
+                <ul>
+                  <p class="item">All-in-one pc</p>
+                    <li>Name: Apple iMac</li>
+                    <li>Price: $1500</li>
+                    <li>Processor: Apple M1</li>
+                    <li>RAM: 8GB</li>
+                    <li> Storage: 512GB SSD</li>
+                    <li>Screen: 24 Inch</li>
+                </ul>
+            </div>
+            </div>
+            </div>
+
+            </div>
+            <button class="btn btn-primary" id="buynow" onclick="checkform()" >By Now</button>
+
+            <div class="cover">
+                   <div class="container-child" id="m-k-h"></div>
+                     <div class="accordion" id="detail">
+            <div class="accordion-item">
+                <button class="accordion-button"
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#listprodact4">
+                Keyboard,Mouse,<br>
+                Headphone</button>
+                <div id="listprodact4" class="accordion">
+                <ol>
+                    <p class="item">Keyboard:</p>
+                    <li>Name:Mechanical</li>
+                    <li>Price:$45</li>
+                    <li>Type:wired</li><br>
+        
+            <p>Mouse:</p>
+            <li>Gaming Mouse</li>
+            <li>price:$30</li>
+            <li>DPI:7200</li>
+
+            <p>Headphon:</p>
+            <li>wirless</li>
+            <li>price:$60</li>
+            <li>Battery:20H</li>
+            </ol>
+            </div>
+            </div>
+            </div>
+
+            </div>
+                <button class="btn btn-primary" id="buynow" onclick="checkform()">By Now</button>
+                  <div class="cover">
+                   <div class="container-child" id="ups"  ></div>
+                     <div class="accordion" id="detail">
+            <div class="accordion-item">
+                <button class="accordion-button"
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#listprodact5">
+                UPS</button>
+                <div id="listprodact5" class="accordion">
+                <ol>
+                  <p class="item">USP</p>
+                    <li>Name:power UPS</li>
+                    <li>price:120$</li>
+                    <li>capacity:650VA</li>
+                    <li>Bachup:30MIn</li>
+                </ol>
+            </div>
+            </div>
+            </div>
+
+              </div>
+                <button class="btn btn-primary" id="buynow" onclick="checkform()">By Now</button></div>
+  
+                      <div class="row">
+                          <div class="cover">
+              <div class="container-child" id="desktop1"></div>
+
+                <div class="accordion" id="detail">
+            <div class="accordion-item">
+                <button class="accordion-button"
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#listprodact6">
+                Desktap</button>
+                <div id="listprodact6" class="accordion">
+                <ol>
+                  <p class="item">Desktop</p>
+                    <li>Name: Dell Desktop PC</li>
+                    <li>Price: $600</li>
+                    <li>Processor: Intel Core i5</li>
+                    <li>RAM: 8GB</li>
+                    <li>Storage: 512GB SSD</li>
+                <li>Monitor: 22 Inch</li>
+                </ol>
+            </div>
+            </div>
+            </div>
+
+            </div>
+                <button class="btn btn-primary"  id="buynow" onclick="checkform()">By Now</button>
+                  <div class="cover">
+                   <div class="container-child" id="hardesk"></div>
+                     <div class="accordion" id="detail">
+            <div class="accordion-item">
+                <button class="accordion-button"
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#listprodact7">
+                Hardesk</button>
+                <div id="listprodact7" class="accordion">
+                <ol>
+                  <p class="item">Hardesk</p>
+                    <li>Name:External HDD</li>
+                    <li>Price:$80</li>
+                    <li>Storage:1TB</li>
+                    <li>Type:USB 3.0</li>
+                </ol>
+            </div>
+            </div>
+            </div>
+
+              </div>
+                <button class="btn btn-primary" id="buynow" onclick="checkform()">By Now</button>
+                  <div class="cover">
+                   <div class="container-child"  id="router"></div>
+
+                     <div class="accordion" id="detail">
+            <div class="accordion-item">
+                <button class="accordion-button"
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#listprodact8">
+                Router</button>
+                <div id="listprodact8" class="accordion">
+                <ol>
+                  <p class="item">Router </p>
+                    <li>Name:WiFi Router</li>
+                    <li>Price:50$</li>
+                    <li>Speed:300Mbps</li>
+                    <li>type:Wirless</li>
+                </ol>
+            </div>
+            </div>
+            </div>
+
+              </div>
+                <button class="btn btn-primary" id="buynow" onclick="checkform()">By Now</button></div>
+                
+    <div class="row">
+          <div class="cover">
+                <div class="container-child" id="labtap"></div>
+
+                  <div class="accordion" id="detail">
+            <div class="accordion-item">
+                <button class="accordion-button"
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#listprodact9">
+                Laptop</button>
+                <div id="listprodact9" class="accordion">
+                <ol>
+                  <p class="item">laptop</p>
+                    <li>   Name: HP Laptop</li>
+                    <li>Price: $750</li>
+                    <li>Processor: Intel Core i7</li>
+                    <li>RAM: 16GB</li>
+                    <li>Storage: 512GB SSD</li>
+                    <li>Screen: 15.6 Inch</li>
+                </ol>
+            </div>
+            </div>
+            </div>
+              </div>
+                <button class="btn btn-primary" id="buynow" onclick="checkform()">By Now</button>
+
+
+                  <div class="cover">
+                   <div class="container-child" id="flash"></div>
+
+                     <div class="accordion" id="detail">
+            <div class="accordion-item">
+                <button class="accordion-button"
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#listprodact10">
+                Flash</button>
+                <div id="listprodact10" class="accordion">
+                <ol>
+                  <p class="item">flash</p>
+                    <li> Name: SanDisk USB Flash Drive</li>
+                    <li>Internal Hard Desk</li>
+                    <li>Price: $15</li>
+                    <li>Storage: 64GB</li>
+                    <li>Type: USB 3.0</li>
+                </ol>
+            </div>
+            </div>
+            </div>
+
+              </div>
+                <button class="btn btn-primary" id="buynow" onclick="checkform()">By Now</button>
+
+
+                  <div class="cover">
+                   <div class="container-child"  id="ssd"></div>
+
+                     <div class="accordion" id="detail">
+            <div class="accordion-item">
+                <button class="accordion-button"
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#listprodact11">
+                SSD</button>
+                <div id="listprodact11" class="accordion">
+                <ol>
+                  <p class="item">SSD</p>
+                    <li>Name:NVMe SSD(PCle)</li>
+                    <li>Price:50-120$</li>
+                    <li>Speed:3000-7000MB/s</li>
+                    <li>Model:Samsong</li>
+                </ol>
+            </div>
+            </div>
+            </div>
+
+            </div>
+                <button class="btn btn-primary" id="buynow" onclick="checkform()">By Now</button></div>
+</div>        
+</div>
+</section>
+
+<br>
+
+ <section>
+  <form  id="form">
+    <h1>checkout form</h1>
+  <div class="mb-3 w-80 ms-4 me-4" class="div_child_form">
+    <label class="text-primary">Name</label>
+    <input type="text" class="form-control border-primary" id="name" required>
+  </div>
+
+  <div class="mb-3 w-80 ms-4 me-4" class="div-child-form">
+    <label class="text-primary">Email</label>
+    <input type="email" class="form-control border-primary" id="email"  >
+  </div>
+
+  <div class="mb-3 w-80 ms-4 me-4" class="div-child-form">
+    <label class="text-primary"><h5>Choose Item</h5></label>
+
+    <select class="form-control border-primary" id="product">
+      <option value="Desktop">Desktop - 600$</option>
+<option value="All_in_one_PC">All in one PC - 1500$</option>
+<option value="laptap">Laptop - 750$</option>
+<option value="Office_PC">Office PC - 800$</option>
+
+<option value="USP_3_Flash">USB 3.0 Flash - 15$</option>
+<option value="Type_C_flash">Type-C Flash - 10$</option>
+<option value="OTG_flash">OTG Flash - 12$</option>
+<option value="Duel_flash">Dual Flash - 16$</option>
+
+<option value="External_Hardesk">External Hard Disk - 80$</option>
+<option value="Internal_Hardesk">Internal Hard Disk - 45$</option>
+<option value="Portable_Hardesk">Portable Hard Disk - 60$</option>
+
+<option value="External_SSD">External SSD - 75$</option>
+<option value="Internal_SSD">Internal SSD - 50$</option>
+
+<option value="Keyboard">Keyboard - 45$</option>
+<option value="Mouse">Mouse - 30$</option>
+<option value="Headphon">Headphone - 60$</option>
+
+<option value="LED_Monitor">LED Monitor - 90$</option>
+<option value="Gaming_Monitor">Gaming Monitor - 180$</option>
+<option value="Curved_Monitor">Curved Monitor - 220$</option>
+
+<option value="Laser_printer">Laser Printer - 150$</option>
+<option value="Inkjet_printer">Inkjet Printer - 80$</option>
+<option value="All_in_one_printer">All in one Printer - 170$</option>
+
+<option value="Home_UPS">Home UPS - 70$</option>
+<option value="Office_UPS">Office UPS - 120$</option>
+<option value="Gaming_UPS">Gaming UPS - 200$</option>
+
+<option value="Bluetooth_Speaker">Bluetooth Speaker - 50$</option>
+<option value="Computer_Speaker">Computer Speaker - 60$</option>
+
+<option value="HD_Webcam">HD Webcam - 80$</option>
+<option value="FULL_HD_Webcam">Full HD Webcam - 100$</option>
+
+<option value="CPU_Cooler">CPU Cooler - 120$</option>
+    </select>
+  </div>
+
+  <div class="mb-3 w-80 ms-4 me-4" class="div-child-form">
+    <label class="text-primary">Inter the price  of selected item  in here</label>
+    <input type="number" class="form-control border-primary" id="price" placeholder="Price" value="number" required>
+  </div>
+
+  <div class="mb-3 w-80 ms-4 me-4" class="div-child-form">
+    <label class="text-primary">Quantity</label>
+    <input type="number" class="form-control border-primary" id="quantity">
+  </div>
+
+  <div class="mb-3 w-80 ms-4 me-4" class="div-child-form">
+    <label class="text-primary">Total Price</label>
+    <input type="number" class="form-control border-primary" id="total" readonly>
+  </div>
+
+  <div class="mb-3 w-80 ms-4 me-4" class="div-child-form">
+    <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+  </div>
+
+</form>
+<script src="js/index.js"></script>
+</section>
+
+<br>
+
+<!-- ABOUT -->
+<section id="about" class="container">
+    <h5 id="about head">About US</h5>
+<p>We are a professional online computer store committed to delivering high-quality technology prodaucts and accessories at compettitive price.
+    Our product range incluudes laptops,keyboards,mice,headphones,networking devices and other essential computer equipment.
+    Our goal is to provide a reliable and easy shopping experience.
+    We focus on quality. customer satisfaction and trusted service
+    We are committed to customer satisfacction and always try to provide the best service and support.
+</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container">
+
+<div class="contact" id="contact">
+    <div id="contacts">
+        <h6>contact</h6>
+    <p>If you hav any question or need assistance,feel free to contact us.</p>
+<p>Address:  Kabule Afghanistan</p>
+<p>Email:   <i class="fa-solid fa-envelope"></i>ozrab14@gmail.com</p>
+<p>Githhub:  <i class="fa-brands fa-github icon"></i>https://githhub.com/ozrab14-byte</p>
+<div id="follow">
+     <p>follow me: 
+  <a href="https://www.instagram.com/ozra.azimi.12" target="_blank"  class="icon-f"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://x.com/OzraWeb54333" target="_blank" class="icon-f"><i class="fa-brands fa-x-twitter icon"  ></i></a>
+<a href="https://githhub.com/ozrab14-byte" target="_blank" class="icon-f"><i class="fa-brands fa-github icon" ></i></a>
+</p></div>
+</div>
+
+  <div id="contact-me" class="row">
+    <form >
+        <h6>Contact Me</h6>
+        <p>feel free to contact me for any questions or order ,I well be happy to help you</p>
+        <label>Name</label><br>
+        <input type="text" placeholder="Inter your name" name="name" value="name" required><br>
+        <label>Email</label><br>
+        <input type="email" placeholder="Inter your Email" name="email" value="@" required><br>
+        <label>Message</label><br>
+        <textarea type="text" placeholder="write your message" name="text" value="textarea"></textarea><br>
+        <button type="submit" id="submitcontact">submit</button>
+    </form>
+  </div>
+   </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center bg-dark text-white p-3 mt-4">
+© 2026 My Computer Shop
+</footer>
+
+<!-- SCRIPTS -->
+<!--<script src="bootstraps/js/bootstrap.bundle.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
